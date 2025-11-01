@@ -13,38 +13,27 @@ body {
     align-items: center;
 }
 .container{
-    min-width: 25%;
-    max-width: 350px;
-    padding: 40px 20px;
-    border: 10px solid rgb(136, 136, 136);
+    border: 5px solid rgb(0, 0, 0);
     border-radius: 40px;
-    box-shadow: 3px 3px 5px 3px black;
-    /* align-items: center; */
 }
 .signup {
-    height: 95vh;
+    width: 24%;
+    padding: 70px 10px;
 }
 .login {
-    height: 95vh;
+    width: 24%;
+    padding: 100px 10px;
 }
-form ,.container {
+.container {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
-    gap: 10px;
+    gap: 20px;
 }
-.heading {
-    height: 25%;
-    text-align: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* border: 2px solid black; */
-}
+
 form {
-    /* width: 90%; */
-    justify-content: space-evenly;
-    /* border: 2px solid black; */
+    gap: 15px ;
+    display: flex;
+    flex-direction: column;
 }
 .signup-form{
     height: 85%;
@@ -55,9 +44,17 @@ form {
 }
 form a {
     text-align: right;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+#reg-acc {
+    color: blue;
+    padding: 0;
 }
 form p {
-    text-align: center;
+    font-size: .95em;
 }
 input {
     background-color: white;
@@ -67,13 +64,12 @@ input {
 input:focus-visible,button:focus-visible {
     outline: 2px solid blue;
     box-shadow: 2px 2px 5px 2px black;
-    /* transform: translate(2); */
      transition: ease-in-out 100ms;
 }
 button {
     background-color: blue;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 10px 15px;
 }
 button,input {
@@ -81,11 +77,20 @@ button,input {
     border-radius:3px ;
 }
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .container {
     border: none;
     box-shadow: none;
-    padding: 20px;
-    height: 70vh;
   }
-} */
+  .login {
+    width: 100%;
+  }
+  .signup {
+    width: 100%;
+  }
+  body {
+    align-items: start;
+    border: 10px solid black;
+    border-radius: 10px;
+  }
+}
