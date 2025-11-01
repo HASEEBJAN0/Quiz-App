@@ -81,11 +81,11 @@ button,input {
     border-radius:3px ;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .container {
     border: none;
     box-shadow: none;
-    padding: 0;
+    padding: 20px;
     height: 70vh;
   }
-}
+} */
